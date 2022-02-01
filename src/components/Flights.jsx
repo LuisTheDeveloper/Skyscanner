@@ -41,7 +41,8 @@ export const LegTimeInfo = styled.div`
 `;
 
 export const LegArrow = styled.span`
-    align-self: flex-end;
+    display: flex;
+    align-self: center;
     padding-right: 1rem;
 `;
 
@@ -117,9 +118,9 @@ export const Flights = ({ trip, legs }) => {
           />
           <LegInfo>
             <TimeSpan>{` ${moment(departureTime1).format('HH:mm')} `}</TimeSpan>
-            <LegArrow><ArrowForwardIcon /></LegArrow>
             <AirportSpan>{` ${leg1.departure_airport} `}</AirportSpan>
           </LegInfo>
+          <LegArrow><ArrowForwardIcon /></LegArrow>
           <LegInfo>
             <TimeSpan>{` ${moment(arrivalTime1).format('HH:mm')} `}</TimeSpan>
             <AirportSpan>{` ${leg1.arrival_airport} `}</AirportSpan>
@@ -138,9 +139,9 @@ export const Flights = ({ trip, legs }) => {
           />
           <LegInfo>
             <TimeSpan>{` ${moment(departureTime2).format('HH:mm')} `}</TimeSpan>
-            <LegArrow><ArrowForwardIcon /></LegArrow>
             <AirportSpan>{` ${leg2.departure_airport} `}</AirportSpan>
           </LegInfo>
+          <LegArrow><ArrowForwardIcon /></LegArrow>
           <LegInfo>
             <TimeSpan>{` ${moment(arrivalTime2).format('HH:mm')} `}</TimeSpan>
             <AirportSpan>{` ${leg2.arrival_airport} `}</AirportSpan>
