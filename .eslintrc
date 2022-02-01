@@ -1,0 +1,56 @@
+{
+    "env": {
+      "browser": true,
+      "jest": true,
+      "es6": true      
+    },
+    "extends": [
+      "plugin:react/recommended",
+      "airbnb" 
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },    
+    "rules": {
+      "react/button-has-type": "warn",
+      "react/jsx-props-no-spreading": "warn",
+      "import/prefer-default-export": 0,
+      "import/no-named-as-default": 0,
+      "import/extensions": 0,
+      "indent":"off",
+      "linebreak-style": 0,
+      "jsx-a11y/click-events-have-key-events": 0,
+      "jsx-a11y/alt-text": 0,
+      "jsx-a11y/no-autofocus": 0,
+      "jsx-a11y/no-static-element-interactions": 0,
+      "object-curly-newline": 0,
+      "radix":"warn",
+      "react/jsx-one-expression-per-line": 0,
+      "react/no-array-index-key": 0,      
+      "react/jsx-filename-extension": 0,
+      "react/prop-types": 0,
+      "max-len": [
+        2,
+        250
+      ],      
+      "no-multiple-empty-lines": [
+        "error",
+        {
+          "max": 1,
+          "maxEOF": 1
+        }
+      ],    
+      "no-unused-vars":"warn",
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": true
+        }
+      ]
+    }
+  }
+  
