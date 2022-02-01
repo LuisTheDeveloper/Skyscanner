@@ -9,7 +9,7 @@ export const LogoWrapper = styled.div`
     display: flex;
     height: 3.5rem;
     justify-content: left;
-    max-width: 480px;
+    width: 33rem;
 `;
 
 export const Logo = styled.img`
